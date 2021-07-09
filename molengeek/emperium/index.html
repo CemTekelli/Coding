@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emperium Tekelli</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  
+    <!-- Fontawesome -->
+    <link rel="stylesheet" type="text/css" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+    <!--------------------------- HEADER ------------------------>
+
+    <header>
+
+        <!----------------------- NAVBAR ------------------------>
+
+        <nav>
+
+            <!------- TITLE -------->
+
+            <div id="logo">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+
+            <!------- NAVBAR LIST ------->
+
+            <div id="navigation">
+                <ul class="nav-links">
+                    <li class="elements">
+                        <a href="">HOME</a>
+                    </li>
+                    <li class="elements">
+                        <a href="">PRODUCT</a>
+                    </li>
+                    <li class="elements">
+                        <a href="">BLOG</a>
+                    </li>
+                    <li class="elements">
+                        <a href="">ELEMENTS</a>
+                    </li>
+                    <li class="elements">
+                        <a href="">ABOUT</a>
+                    </li>
+                    <li class="elements">
+                        <a href="">CONTACT</a>
+                    </li>
+                    <ul>
+                        <li class="buttons" id="btn-white">
+                            <button></button>
+                        </li>
+                        <li class="buttons" id="btn-black">
+                            <button></button>
+                    </ul>
+                    </li>
+                    <li class="buttons" id="btn-connexion">
+                    <li>
+                        <button onclick="document.getElementById('form').style.display='block'" style="width:auto;" class="btn btn-sm btn-outline-secondary">Connexion</button>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+            <section class="form">
+                <div id="form" class="p-5 modal">
+                    <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container con">
+                            <div class="row" id="cons">
+                                <div class="col-6">
+                                                    <!-- sign up -->
+                                    <div id="si">
+                                        <button>Sign up</button>
+                                    </div>
+                                    <div class="my-3" id="sign">
+                                        
+                                        <label for="email"><b>Email</b></label>
+                                        <input class="text myradius" type="text" placeholder="Enter Email" name="email" required>
+                                
+                                        <label for="psw"><b>Password</b></label>
+                                        <input class="text myradius" type="password" placeholder="Enter Password" name="psw" required>
+                                    
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                        </label>
+                                
+                                        <div class="clearfix">
+                                            <button class="button" type="button" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button> 
+                                            <button class="button myradius" type="submit">Sign up</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                <!-- registrer -->
+                                    <div id="re">
+                                        <button>Register</button>
+                                    </div>
+                                    <div class="col-6 d-none" id="register">
+                                        <div class="form-content">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="text myradius" placeholder="Your Name *" value=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-5 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="text myradius" placeholder="Phone Number *" value=""/>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                            <div class="row">
+                                                <div class="col-xs-12"></div>
+                                                    <div class="form-group">
+                                                        <input class="text myradius" type="text" placeholder="Enter Email" name="email" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="text myradius" placeholder="Your Password *" value=""/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="text myradius" placeholder="Confirm Password *" value=""/>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="button myradius">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <!---------------------- END NAVBAR ---------------------->
+
+    </header>
+
+    <!-------------------------- END HEADER -------------------- -->
+
+
+
+
+    <!----------------------------------- MAIN ---------------------------->
+
+    <main>
+        <div id="shop-at">
+            <div id="shop-elements">
+                <h2 class="color-red py-2">Shop at</h2>
+                <img class="py-2" src="./assets/img/logo.png" alt="">
+                <p class="py-2 color-grey">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy mith my</p>
+                <button class="bg-red">SALE ITEMS</button>
+            </div>
+            <div id="shop-img">
+                <img src="./assets/img/slider-1.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="py-5">
+            <div id="items">
+                <div id="room">
+                    <p>Living Room</p>
+                </div>  
+                <div id="sale">
+                    <p>Sale Items</p>
+                </div>
+                <div id="clothes">
+                    <p>Clothes</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="all-products">
+            <h3>Recent Products</h3>
+            <div class="products">
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    </div>
+                    <h5>Luxury Sofa</h5>
+                    <span class="color-red bold">$600.00</span>
+                </div>
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-gloves.jpg" alt="">
+                        <div class="text-card">
+                            <div class="card-black">
+                                <span>view details</span>
+                            </div>
+                            <div class="card-red">   
+                                <span>add to car</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="mx-3">
+                            <span class="p-4 bg-red round color-white uppercase">sale!</span>
+                        </div>
+                        <div>
+                            <h5>Leather Gloves</h5>
+                            <span class="line color-grey bold">$34.00</span>
+                            <span class="color-red bold">$27.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-cups.jpg" alt="">
+                    </div>
+                    <h5>Colorful Bowl</h5>
+                    <span class="color-red bold">$18.00</span>
+                </div>
+            </div>
+            <div class="products">
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-bag.jpg" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="mx-3">
+                            <span class="p-4 bg-red round color-white uppercase">sale!</span>
+                        </div>
+                        <div>
+                            <h5>Women Bag</h5>
+                            <span class="line color-grey bold">$34.00</span>
+                            <span class="color-red bold">$27.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-tshitr.jpg" alt="">
+                    </div>
+                    <h5>Minimal T-Shirt</h5>
+                    <span class="color-red bold">$15.00</span>
+                </div>
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-plates.jpg" alt="">
+                    </div>
+                    <h5>Plates Set</h5>
+                    <span class="color-red bold">$30.00</span>
+                </div>
+            </div>
+            <div class="products">
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-modern-sofa.jpg" alt="">
+                    </div>
+                    <h5>Modern Sofa</h5>
+                    <span class="color-red bold">$900.00</span>
+                </div>
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-bed.jpg" alt="">
+                    </div>
+                    <h5>Bed Linen</h5>
+                    <span class="color-red bold">$79.00</span>
+                </div>
+                <div class="p-3">
+                    <div class="img-card">
+                        <img src="./assets/img/products_mini/product-shoes.jpg" alt="">
+                    </div>
+                    <h5>Minimal Shoes</h5>
+                    <span class="color-red bold">$60.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="discover">
+            <div>
+                <h2>Discover Thousands Of Great Products</h2>
+                <button class="bg-red uppercase color-white">Learn More</button>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="fashion">
+            <div>
+                <h2>Hot Fashion Products</h2>
+            </div>
+
+            <div class="py-5" id="carousel">
+                <div id="carousel-inner">
+                    <div class="px-5 divdiv">
+                        <img class="py-2" src="./assets/img/products_mini/product-luxry-sofa.jpg" alt="">
+                        <h6>Luxury Sofa</h6>
+                        <span class="color-red bold">$600.00</span>
+                    </div>
+
+                    <div class="px-5 divdiv">
+                        <img class="py-2"  src="./assets/img/products_mini/product-gloves.jpg" alt="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="mx-3">
+                                <span class="p-3 bg-red color-white">sale!</span>
+                            </div>
+                            <div>
+                                <h6>Leather Gloves</h6>
+                                <span class="line color-grey bold">$34.00</span>
+                                <span class="color-red bold">$27.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-5 divdiv">
+                        <img class="py-2"  src="./assets/img/products_mini/product-cups.jpg" alt="">
+                        <h6>Colorful Bowl</h6>
+                        <span class="color-red bold">$18.00</span>
+                    </div>
+
+                    <div class="px-5 divdiv">
+                        <img class="py-2"  src="./assets/img/products_mini/product-bag.jpg" alt="">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="mx-3">
+                                <span class="p-3 bg-red color-white">sale!</span>
+                            </div>
+                            <div>
+                                <h6>Women Bag</h6>
+                                <span class="line color-grey bold">$34.00</span>
+                                <span class="color-red bold">$27.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-5 divdiv">
+                        <img class="py-2"  src="./assets/img/products_mini/product-tshitr.jpg" alt="">
+                        <h5>Minimal T-Shirt</h5>
+                        <span class="color-red bold">$15.00</span>
+                    </div>
+
+                    <div class="px-5 divdiv">
+                        <img class="py-2"  src="./assets/img/products_mini/product-plates.jpg" alt="">
+                        <h5>Plates Set</h5>
+                        <span class="color-red bold">$30.00</span>
+                    </div>
+
+                    <div class="px-5 divdiv">
+                        <img class="py-2"  src="./assets/img/products_mini/product-modern-sofa.jpg" alt="">
+                        <h5>Modern Sofa</h5>
+                        <span class="color-red bold">$900.00</span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div id="trust" class="d-flex">
+            <div class="trust-elements">
+                <i class="far fa-check-circle fa-3x my-2"></i>
+                <h5>TRUSTED BY 10,000+ CUSTOMERS</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta esse nulla minima ullam atque officiis repudiandae tempora consequatur?</p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="trust-elements2">
+                <i class="fas fa-fighter-jet fa-3x my-2 "></i>
+                <h5>VERY FAST SHIPPING</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta esse nulla minima ullam atque officiis repudiandae tempora consequatur?</p>
+                <button>LEARN MORE</button>
+            </div>
+            <div class="trust-elements">
+                <i class="far fa-check-circle fa-3x my-2"></i>
+                <h5>TRUSTED BY 10,000+ CUSTOMERS</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores dicta esse nulla minima ullam atque officiis repudiandae tempora consequatur?</p>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!---------------------------------- END MAIN --------------------------->
+
+
+
+
+    <!---------------------------------FOOTER -------------------------------->
+
+    <footer>
+        <div id="footer">
+            <div>
+                <h5>ABOUT US</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem expedita qui explicabo perspiciatis est, repellendus exercitationem obcaecati ab id ipsa ullam</p>
+            </div>
+            <div id="recent">
+                <h5>RECENT POSTS</h5>
+                <p>>Hello World</p>
+                <p>>Wonderful serenity has taken</p>
+                <p>>In my soul and absorb its power</p>
+                <p>>I hear the buzz of the little</p>
+            </div>
+            <div>
+                <h5>TAG CLOUD</h5>
+                <div class="tags">
+                    <button>business</button>
+                    <button>confidence</button>
+                    <button>gadgets</button>
+                </div>
+                <div class="tags">
+                    <button>identity</button>
+                    <button>logo</button>
+                    <button>photography</button>
+                </div>
+                <div class="tags">
+                    <button>time</button>
+                    <button>trips</button>
+                    <button>works</button>
+                </div>
+                <div class="tags">
+                    <button>work space</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="end">
+        <p>Copyright@2021 Cem Tekelli - All rights reserved</p>
+    </div>
+
+    <!---------------------------------END FOOTER ----------------------------->
+
+
+
+
+    <!----------------------------- SCRIPTS ------------------------------------->
+    
+    <script type="application/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+  
+    
+    <script type="application/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import './_variables'
+body
+    max-height: 100vh
+    overflow-y: hidden
+.homePage
+    width: 100%
+.navbar
+    display: flex
+    justify-content: center
+    width: 100%
+    height: 10vh
+    background-color: $neuro
+    button
+        height: 50px
+        width: 200px
+        margin: 0 10px
+        border-radius: 25px
+        background: $neuro
+        box-shadow:  -3px -3px 7px $n, 3px 3px 5px $shadow
+        transition: all .5s 
+        cursor: pointer
+        color: black
+        outline: none
+        border: 0
+        color: #585555
+    button:hover
+        color: $gold
+        font-weight: bold
+        box-shadow: inset -3px -3px 7px $n, inset 3px 3px 5px $shadow
+            
+    button:hover
+        box-shadow: inset -3px -3px 7px $n, inset 3px 3px 5px $shadow
+        a
+            color: $gold
+.welcome
+    height: 90vh
+    background-color: $neuro
+    display: flex
+    justify-content: center
+    align-items: center
+
+.clavier
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    img
+        height: 150px
+        position: absolute
+        top: 0
+        left: 0
+@keyframes apparition
+    0%
+        transform: translateY(2000px)
+    100%
+        transform: none
+.wrapper
+    box-shadow:  -5px -5px 10px $n,  5px 5px 10px $shadow
+    padding: 10px 30px
+    border-radius: 10px
+    animation: apparition 3s ease-out
+.keys
+    display: flex
+    justify-content: center
+    input
+        height: 25px
+        min-width: 25px
+        padding: 10px
+        outline: none
+        border: none
+        margin: 10px
+        border-radius: 5px
+        font-size: 10px
+        color: black
+        text-transform: uppercase
+        background-color: $neuro
+        box-shadow:  -3px -3px 7px $n, 3px 3px 5px $shadow
+        cursor: pointer
+        color: #585555
+        animation: input 2s 4s ease-out
+    input[value="space"]
+        width: 40%
+    input:focus
+        font-size: 11px
+        box-shadow: inset -3px -3px 7px $n,inset 3px 3px 5px $shadow
+        color: $gold
+@keyframes input
+    0%
+        background-color: $neuro
+        font-size: 10px
+    50%
+        font-size: 11px
+        color: $gold
+    100%
+        background-color: $neuro
+        font-size: 10px
+        
+.hi
+    height: 35vh
+    width: 35vw
+    border-radius: 10px
+    margin-bottom: 50px
+    box-shadow:  -3px -3px 5px $n, 5px 5px 10px $shadow
+    display: flex
+    justify-content: center
+    align-items: center
+    animation: apparition2 2s ease-out
+.inner-hi
+    display: flex
+    align-items: center
+    justify-content: center
+    h1
+        color: $gold
+        text-shadow: -5px -5px 5px #000000, 5px 5px 10px #4e4306
+        font-size: 2.5em
+        animation: text 7s ease-out
+@keyframes text
+    0%
+        opacity: 0
+    50%
+        opacity: 0
+    100%
+        opacity: 1
+
+@keyframes apparition2
+    0%
+            transform: translateY(-2000px)
+    100%
+        transform: none
+.inner-hi
+    height: 25vh
+    width: 31vw
+    border-radius: 10px
+    //box-shadow: inset -3px -3px 7px $n,inset 3px 3px 5px $shadow
+    box-shadow: inset 6px 6px 15px #252525, -6px -6px 15px #4d4d4d inset
+    background-color: #4d4d4d
+    text-align: center
+    padding-top: 20px
+    display: flex
+    align-items: center
+
